@@ -2,7 +2,7 @@ name: NASA Mission Control CI
 on:
   push:
     branches: [main]
-  bull_request:
+  pull_request:
     branches: [main]
 jobs:
   build:
