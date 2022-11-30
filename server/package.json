@@ -6,8 +6,8 @@
   "scripts": {
     "test": "jest",
     "watch": "nodemon src/server.js",
-    "start": "set PORT=5000&& node src/server.js",
-    "start-cluster": "set PORT=5000&& pm2 start src/server.js -i max -l logs.text"
+    "start": "node src/server.js",
+    "start-cluster": "pm2 start src/server.js -i max -l logs.text"
   },
   "keywords": [],
   "author": "",
